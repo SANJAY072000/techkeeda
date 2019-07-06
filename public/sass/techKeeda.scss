@@ -1,0 +1,79 @@
+@import "mixins";
+
+$rockingRed:(
+rr1:#ff8600,
+rr2:#dc3545,
+rr3:#AE1438
+);
+
+$beautifuleBlue:(
+bb1:#007bff,
+bb2:#2475B0,
+bb3:#25CCF7
+);
+
+$golfGreen:(
+gg1:#81b71a,
+gg2:#13a774,
+gg3:#45CE30
+);
+
+$freshYellow:(
+fy1:#E1DA00,
+fy2:#FBD28B,
+fy3:#FFF222
+);
+
+$oldGrey:(
+og1:#7B8788,
+og2:#1f2024,
+og3:#758AA2
+);
+
+@function rr($a){
+  @return map-get($rockingRed,$a);
+}
+
+@function bb($a){
+  @return map-get($beautifuleBlue,$a);
+}
+
+@function gg($a){
+  @return map-get($golfGreen,$a);
+}
+
+@function fy($a){
+  @return map-get($freshYellow,$a);
+}
+
+@function og($a){
+  @return map-get($oldGrey,$a);
+}
+
+body{
+  
+}
+
+@media (min-width:576px){
+  body{
+
+  }
+}
+
+@media (min-width:768px){
+  body{
+
+  }
+}
+
+@media (min-width:992px){
+  body{
+
+  }
+}
+
+@media (min-width:1200px){
+  body{
+
+  }
+}
