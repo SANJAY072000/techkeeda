@@ -1257,11 +1257,11 @@
   .device[data-device="Chromebook"][data-orientation="portrait"][data-color="black"] .screen {
     top: 7.8934854969%;
     left: 12.7313516545%;
-    width: 74.1446999439%;
-    height: 71.2791250594%; }
+    width: 75.1446999439%;
+    height: 75.2791250594%; }
   .device[data-device="Chromebook"][data-orientation="portrait"][data-color="black"]::after {
     content: '';
-    background-image: url(../device-mockups/Chromebook/portrait_black.png);
+    background-image: url(../images/portrait_black.png);
     z-index: -1; }
   .device[data-device="Chromebook"][data-orientation="portrait"][data-color="black"] .button {
     display: none;

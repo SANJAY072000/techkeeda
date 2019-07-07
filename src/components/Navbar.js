@@ -39,7 +39,7 @@ export default class Navbar extends Component {
   }
   render(){
     return(
-      <nav className="navbar navbar-expand navbar-dark nv shadow">
+      <nav className="navbar navbar-expand navbar-dark nv shadow rounded">
         <div className="container">
 <Link to="/" className="navbar-brand" href="#">
 <img src="./images/download.jpg" width="30" height="30" alt="Unavailable"/> TechKeeda

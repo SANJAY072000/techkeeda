@@ -47,3 +47,10 @@
   font-family: 'Dancing Script', cursive;
   font-size: 1.6em;
 }
+
+@mixin aside-h1(){
+  font-family: 'Oswald', sans-serif;
+  background:linear-gradient(#FF416C,#FF4B2B);
+  -webkit-background-clip:text;
+  color: transparent;
+}
