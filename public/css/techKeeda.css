@@ -1,3 +1,12 @@
-
+body .nv {
+  background-color: #ff8600;
+  border-bottom: 2.5px solid white; }
+body header .a {
+  width: 170px;
+  height: 170px; }
+body header h1 {
+  font-family: 'Satisfy', cursive; }
+body section h1 {
+  font-family: 'EB Garamond', serif; }
 
 /*# sourceMappingURL=techKeeda.css.map */

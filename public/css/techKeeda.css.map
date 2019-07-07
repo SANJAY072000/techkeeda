@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAqDE,QAAG;EACD,gBAAgB,EAnDhB,OAAO;EAoDP,aAAa,EAAE,iBAAiB;AAGhC,cAAE;EACA,KAAK,EAAC,KAAK;EACX,MAAM,EAAC,KAAK;AAEd,cAAE;EACA,WAAW,EAAE,kBAAkB;AAIjC,eAAE;EACA,WAAW,EAAE,oBAAoB",
+"sources": ["../sass/techKeeda.scss"],
 "names": [],
 "file": "techKeeda.css"
 }
