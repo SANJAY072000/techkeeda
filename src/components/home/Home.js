@@ -9,7 +9,7 @@ export default class Home extends Component {
       <div>
       <Header/>
       <Section/>
-      {/*<Fun/>*/}
+      <Fun/>
       </div>
     );
   }

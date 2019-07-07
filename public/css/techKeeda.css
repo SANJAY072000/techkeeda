@@ -34,5 +34,9 @@ body section .card-title {
   font-size: 1.6em; }
 body section .card-text {
   font-family: 'Catamaran', sans-serif; }
+body aside h1 {
+  background: linear-gradient(#8A2387, #E94057, #F27121);
+  -webkit-background-clip: text;
+  background-size: cover; }
 
 /*# sourceMappingURL=techKeeda.css.map */

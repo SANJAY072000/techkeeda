@@ -52,54 +52,43 @@ og3:#758AA2
 
 body{
   .nv{
-    background-color: rr(rr1);
-    border-bottom: 2.5px solid white;
+  @include nv();
   }
   header{
     .a{
-      width:180px;
-      height:180px;
+    @include header-a();
     }
     h1{
-      font-family: 'Satisfy', cursive;
-      background:linear-gradient(#fc4a1a,#f7b733);
-      -webkit-background-clip:text;
-      color: transparent;
+    @include header-h1();
     }
   }
   section{
     h1{
-      font-family: 'Oswald', sans-serif;
-      background:linear-gradient(#c21500,#ffc500);
-      -webkit-background-clip:text;
-      color: transparent;
+    @include section-h1();
     }
     .fa-wrench{
-      font-size: 4em;
-      background:linear-gradient(#007991,#78ffd6);
-      -webkit-background-clip:text;
-      color: transparent;
+    @include section-fa-wrench();
     }
     .fa-podcast{
-      font-size: 4em;
-      background:linear-gradient(#40E0D0,#FF8C00,#FF0080);
-      -webkit-background-clip:text;
-      color: transparent;
+    @include section-fa-podcast();
     }
     .fa-line-chart{
-      font-size: 4em;
-      background:linear-gradient(#FF512F,#DD2476);
-      -webkit-background-clip:text;
-      color: transparent;
+      @include section-fa-line-chart();
     }
     .card-title{
-      font-family: 'Dancing Script', cursive;
-      font-size: 1.6em;
+      @include section-card-title();
     }
     .card-text{
       font-family: 'Catamaran', sans-serif;
     }
   }
+aside{
+  h1{
+    background: linear-gradient(#8A2387,#E94057,#F27121);
+    -webkit-background-clip:text;
+    background-size: cover;
+  }
+}
 }
 
 @media (min-width:576px){
