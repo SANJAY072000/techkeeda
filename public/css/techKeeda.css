@@ -39,5 +39,14 @@ body aside h1 {
   background: linear-gradient(#FF416C, #FF4B2B);
   -webkit-background-clip: text;
   color: transparent; }
+body #section2 h1 {
+  font-family: 'Oswald', sans-serif;
+  background: linear-gradient(#009FFF, #ec2F4B);
+  -webkit-background-clip: text;
+  color: transparent; }
+
+@media (min-width: 768px) {
+  body header .stph {
+    margin-left: 125px !important; } }
 
 /*# sourceMappingURL=techKeeda.css.map */

@@ -87,6 +87,11 @@ aside{
   @include aside-h1();
   }
 }
+#section2{
+  h1{
+    @include section2-h1();
+  }
+}
 }
 
 @media (min-width:576px){
@@ -97,7 +102,11 @@ aside{
 
 @media (min-width:768px){
   body{
-
+  header{
+    .stph{
+      margin-left: 125px !important;
+    }
+  }
   }
 }
 

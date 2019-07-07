@@ -54,3 +54,10 @@
   -webkit-background-clip:text;
   color: transparent;
 }
+
+@mixin section2-h1(){
+  font-family: 'Oswald', sans-serif;
+  background:linear-gradient(#009FFF,#ec2F4B);
+  -webkit-background-clip:text;
+  color: transparent;
+}

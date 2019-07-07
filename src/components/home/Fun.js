@@ -13,7 +13,7 @@ export default class Fun extends Component {
             </div>
             <div className="w-100 my-4"></div>
             <div className="col-lg-6">
-                <div className="device-wrapper" style={{"marginLeft":"80px"}}>
+                <div className="device-wrapper stp" style={{"marginLeft":"80px"}}>
         <div className="device" data-device="Chromebook" data-orientation="portrait" data-color="black">
           <div className="screen">
           <img src="./images/uig.jpg" alt="Unavailable" className="img-fluid" style={{"height":"100%","width":"100%"}}/>
@@ -29,7 +29,7 @@ export default class Fun extends Component {
             <h3 className="display-5 lead my-5 text-center">A curated collection of some of the best fonts for the developers.</h3>
             </div>
             <div className="col-lg-6">
-              <div className="device-wrapper" style={{"marginLeft":"80px"}}>
+              <div className="device-wrapper stp" style={{"marginLeft":"80px"}}>
       <div className="device" data-device="Chromebook" data-orientation="portrait" data-color="black">
         <div className="screen">
         <img src="./images/gf.png" alt="Unavailable" className="img-fluid" style={{"height":"100%","width":"100%"}}/>

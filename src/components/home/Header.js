@@ -21,7 +21,7 @@ export default class Header extends Component {
           </h3>
         </div>
         <div className="col-lg col-12">
-          <div className="device-wrapper" style={{"marginLeft":"110px"}}>
+          <div className="device-wrapper stph" style={{"marginLeft":"110px"}}>
   <div className="device" data-device="iPhoneSE" data-orientation="portrait" data-color="gold">
     <div className="screen">
     <img src="./images/download.jpg" alt="Unavailable" className="img-fluid" style={{"height":"100%","width":"100%"}}/>
