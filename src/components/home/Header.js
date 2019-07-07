@@ -8,8 +8,8 @@ export default class Header extends Component {
         <header>
       <div className="row">
         <div className="col-lg col-12">
-          <img src="./images/download.jpg" className="animated infinite tada a img-fluid mx-auto d-block rounded-circle" alt="Unavailable"/>
-          <h1 className="display-2 text-center">TechKeeda</h1>
+          <img src="./images/download.jpg" className="mt-3 animated infinite tada a img-fluid mx-auto d-block rounded-circle" alt="Unavailable"/>
+          <h1 className="display-2 text-center mt-4">TechKeeda</h1>
           <h3 className="display-5 text-center lead mb-5">
             Final stop of all News Enthusiasts <br/>
           Here you can get updated with news of different countries in their languages.
