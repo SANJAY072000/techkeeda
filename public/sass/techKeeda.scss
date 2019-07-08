@@ -92,6 +92,14 @@ aside{
     @include section2-h1();
   }
 }
+#section3{
+  h1{
+    @include section3-h1();
+  }
+  .vids{
+    margin-right: 25px;
+  }
+}
 }
 
 @media (min-width:576px){
@@ -105,6 +113,14 @@ aside{
   header{
     .stph{
       margin-left: 125px !important;
+    }
+  }
+  #section3{
+    h1{
+    @include section3-h1();
+    }
+    .vids{
+      margin-left: 175px;
     }
   }
   }

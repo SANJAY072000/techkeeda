@@ -44,9 +44,23 @@ body #section2 h1 {
   background: linear-gradient(#009FFF, #ec2F4B);
   -webkit-background-clip: text;
   color: transparent; }
+body #section3 h1 {
+  font-family: 'Oswald', sans-serif;
+  background: linear-gradient(#ee0979, #ff6a00);
+  -webkit-background-clip: text;
+  color: transparent; }
+body #section3 .vids {
+  margin-right: 25px; }
 
 @media (min-width: 768px) {
   body header .stph {
-    margin-left: 125px !important; } }
+    margin-left: 125px !important; }
+  body #section3 h1 {
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(#ee0979, #ff6a00);
+    -webkit-background-clip: text;
+    color: transparent; }
+  body #section3 .vids {
+    margin-left: 175px; } }
 
 /*# sourceMappingURL=techKeeda.css.map */
