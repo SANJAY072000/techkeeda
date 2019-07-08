@@ -31,9 +31,11 @@ export default class YouTube extends Component {
       </div>
       <div className="w-100 my-3"></div>
       <div className="col-12 mx-auto">
-      {this.state.videos.map(a=><iframe width="560" height="315" key={a.id.videoId}
-      src={`https://www.youtube.com/embed/${a.id.videoId}`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="vids mt-5">
-      </iframe>)}
+      {this.state.videos.map(a=>
+        <iframe width="560" height="315" key={a.id.videoId}
+      src={`https://www.youtube.com/embed/${a.id.videoId}`} frameBorder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen className="vids mt-5" title="Hey gone"></iframe>)}
 
       </div>
       </div>

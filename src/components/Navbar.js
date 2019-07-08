@@ -8,10 +8,7 @@ domain='dev-uf0zjuv7.auth0.com';
 export default class Navbar extends Component {
   componentWillMount(){
     this.lock=new Auth0Lock(clientId,domain);
-    this.lock.on('authenticated',authres=>{
-      console.log(authres);
-      this.showProfile(authres);
-    });
+    this.lock.on('authenticated',authres=>this.showProfile(authres));
   }
   showProfile(auth){
     this.lock.getUserInfo(auth.accessToken,(err,profile)=>{
