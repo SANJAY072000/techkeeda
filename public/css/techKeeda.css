@@ -51,6 +51,9 @@ body #section3 h1 {
   color: transparent; }
 body #section3 .vids {
   margin-right: 25px; }
+body #aside2 .card {
+  width: 18rem;
+  margin-left: 100px; }
 
 @media (min-width: 768px) {
   body header .stph {
@@ -61,6 +64,9 @@ body #section3 .vids {
     -webkit-background-clip: text;
     color: transparent; }
   body #section3 .vids {
-    margin-left: 175px; } }
+    margin-left: 175px; }
+  body #aside2 .card {
+    width: 18rem;
+    margin-left: 0px; } }
 
 /*# sourceMappingURL=techKeeda.css.map */

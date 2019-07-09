@@ -16,8 +16,8 @@ export default class App extends Component {
       <Route path="/" exact component={Home}/>
       <Route path="/news" component={News}/>
       <Route path="/dev" component={Dev}/>
-      <Route path="/dev/fonts" component={Font}/>
-      <Route path="/dev/grads" component={Grad}/>
+      <Route path="/fonts" component={Font}/>
+      <Route path="/grads" component={Grad}/>
       </div>
       </Router>
     );

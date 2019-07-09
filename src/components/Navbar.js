@@ -6,6 +6,9 @@ const clientId='bbSbrUNsXUkiG4JnGfTRrtjsIlLGag6D',
 domain='dev-uf0zjuv7.auth0.com';
 
 export default class Navbar extends Component {
+  componentDidMount(){
+    this.setState({token:localStorage.getItem('user')});
+  }
   componentWillMount(){
     this.lock=new Auth0Lock(clientId,domain);
     this.lock.on('authenticated',authres=>this.showProfile(authres));
@@ -44,7 +47,7 @@ export default class Navbar extends Component {
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav mx-auto">
       <li className="nav-item active">
-      <button className='btn btn-success nav-link px-4 rounded-pill shadow border' onClick={this.logio}><i className="fa fa-sign-in" aria-hidden="true"></i> {this.state.token?'Logout':'Login'}</button>
+      <Link to='/' className='btn btn-success nav-link px-4 rounded-pill shadow border' onClick={this.logio}><i className="fa fa-sign-in" aria-hidden="true"></i> {this.state.token?'Logout':'Login'}</Link>
       </li>
       <li className='nav-item active mx-3'>
       <Link to="/news" className={this.state.token?'nav-link':'nav-link disabled'}><i className="fa fa-newspaper-o" aria-hidden="true"></i> News</Link>

@@ -100,6 +100,12 @@ aside{
     margin-right: 25px;
   }
 }
+#aside2{
+  .card{
+    width: 18rem;
+    margin-left: 100px;
+  }
+}
 }
 
 @media (min-width:576px){
@@ -121,6 +127,12 @@ aside{
     }
     .vids{
       margin-left: 175px;
+    }
+  }
+  #aside2{
+    .card{
+      width: 18rem;
+      margin-left: 0px;
     }
   }
   }
