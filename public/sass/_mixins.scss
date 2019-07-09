@@ -68,3 +68,8 @@
   -webkit-background-clip:text;
   color: transparent;
 }
+
+@mixin aside2-card(){
+  width: 18rem;
+  margin-left: 100px;
+}

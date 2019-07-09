@@ -58,7 +58,7 @@ let link=this.state.url,
 cnt='Paste the above snippet in your index.html file';
     return(
       <div className="container mt-5">
-      <section id="aside2">
+      <aside id="aside2">
       <div className="row">
         <div className="col-12">
           <h1 className="display-5 text-center lead">
@@ -85,7 +85,7 @@ cnt='Paste the above snippet in your index.html file';
   </div>)
 }
       </div>
-      </section>
+    </aside>
       </div>
     );
   }

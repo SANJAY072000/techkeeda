@@ -102,8 +102,7 @@ aside{
 }
 #aside2{
   .card{
-    width: 18rem;
-    margin-left: 100px;
+    @include aside2-card();
   }
 }
 }
