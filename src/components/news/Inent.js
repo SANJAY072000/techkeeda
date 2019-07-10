@@ -34,11 +34,23 @@ class Rinent extends Component {
     })
     .then(res=>this.setState({inews:res.data.articles}))
     .catch(err=>console.log(err));
+    axios({
+      url:'https://newsapi.org/v2/top-headlines?country=gb&category=entertainment&apiKey=8efb4d00ecb5445d9c27a0addb9bd51e'
+    })
+    .then(res=>this.setState({uk:res.data.articles}))
+    .catch(err=>console.log(err));
+    axios({
+      url:'https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=8efb4d00ecb5445d9c27a0addb9bd51e'
+    })
+    .then(res=>this.setState({us:res.data.articles}))
+    .catch(err=>console.log(err));
   }
   constructor(props){
     super(props);
     this.state = {
-      inews:[]
+      inews:[],
+      us:[],
+      uk:[]
     };
   }
   render(){
@@ -49,7 +61,7 @@ class Rinent extends Component {
             <div className="row">
               <div className="col-12">
                 <h1 className="display-4 text-center lead my-4 animated swing delay-1s">
-                Entertainment Headlines !
+                Entertainment Headlines across the Globe !
               </h1>
               <div className="d-flex justify-content-center mt-5">
               <Link to="/intech" className="btn btn-outline-success">Technology</Link>
@@ -57,6 +69,44 @@ class Rinent extends Component {
               <Link to="/insp" className="btn btn-outline-warning">Sports</Link>
               </div>
               </div>
+            </div>
+            <div className="row mt-5">
+              {this.state.us.map((a,i)=>
+              <div className="border-top mt-5" key={i}>
+              <div className="col-12">
+                <h4 className="asd display-5 my-5">{a.title}</h4>
+              </div>
+            <div className="col-12">
+              <img src={`${a.urlToImage}`} alt="Unavailable" style={{"width":"500px","height":"300px"}}
+              className="img-fluid rounded mx-auto d-block"/>
+            </div>
+            <div className="col-12">
+              <h4 className="text-center display-5 lead mt-5">{a.description}</h4>
+            </div>
+            <div className="col-12">
+              <a href={`${a.url}`} target="_blank" rel="noopener noreferrer" className="text-center display-5 lead my-4 font-weight-bold">See More -></a>
+            </div>
+            </div>
+            )}
+            </div>
+            <div className="row mt-5">
+              {this.state.uk.map((a,i)=>
+              <div className="border-top mt-5" key={i}>
+              <div className="col-12">
+                <h4 className="asd display-5 my-5">{a.title}</h4>
+              </div>
+            <div className="col-12">
+              <img src={`${a.urlToImage}`} alt="Unavailable" style={{"width":"500px","height":"300px"}}
+              className="img-fluid rounded mx-auto d-block"/>
+            </div>
+            <div className="col-12">
+              <h4 className="text-center display-5 lead mt-5">{a.description}</h4>
+            </div>
+            <div className="col-12">
+              <a href={`${a.url}`} target="_blank" rel="noopener noreferrer" className="text-center display-5 lead my-4 font-weight-bold">See More -></a>
+            </div>
+            </div>
+            )}
             </div>
               <div className="row mt-5">
                 {this.state.inews.map((a,i)=>
