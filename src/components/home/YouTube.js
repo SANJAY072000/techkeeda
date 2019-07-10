@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import axios from 'axios';
 
-const API = 'AIzaSyDWdlBN5khxtXVQ0_CWKwuSzCLwh0fLbZA';
-const channelID = 'UCByH7Leys13JzxVAkGZIZPA';
+const API = '';
+const channelID = '';
 
 export default class YouTube extends Component {
   componentWillMount(){
@@ -15,7 +15,7 @@ export default class YouTube extends Component {
   constructor(props){
     super(props);
     this.state = {
-      finalURL:`https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelID}&part=snippet,id&order=date&maxResults=3`,
+      finalURL:``,
       videos:[]
     };
   }
