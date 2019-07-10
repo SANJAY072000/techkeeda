@@ -30,17 +30,17 @@ constructor(props){
 class Rinent extends Component {
   componentWillMount(){
     axios({
-      url:'https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=8efb4d00ecb5445d9c27a0addb9bd51e'
+      url:''
     })
     .then(res=>this.setState({inews:res.data.articles}))
     .catch(err=>console.log(err));
     axios({
-      url:'https://newsapi.org/v2/top-headlines?country=gb&category=entertainment&apiKey=8efb4d00ecb5445d9c27a0addb9bd51e'
+      url:''
     })
     .then(res=>this.setState({uk:res.data.articles}))
     .catch(err=>console.log(err));
     axios({
-      url:'https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=8efb4d00ecb5445d9c27a0addb9bd51e'
+      url:''
     })
     .then(res=>this.setState({us:res.data.articles}))
     .catch(err=>console.log(err));
