@@ -29,7 +29,7 @@ export default class Font extends Component {
 class Rfont extends Component {
   componentDidMount(){
     axios({
-      url:'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDWdlBN5khxtXVQ0_CWKwuSzCLwh0fLbZA'
+      url:''
     })
     .then(res=>this.setState({family:res.data.items}))
     .catch(err=>console.log(err));
