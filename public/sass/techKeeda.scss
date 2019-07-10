@@ -105,6 +105,17 @@ aside{
     @include aside2-card();
   }
 }
+#aside3{
+  h1{
+    font-family: 'Dancing Script', cursive;
+    background:linear-gradient(#00F260,#0575E6);
+    -webkit-background-clip:text;
+    color: transparent;
+  }
+  .asd{
+    font-family: 'Catamaran', sans-serif;
+  }
+}
 }
 
 @media (min-width:576px){

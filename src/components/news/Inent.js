@@ -3,7 +3,7 @@ import Lf from '../Lf';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 
-export default class News extends Component {
+export default class Inent extends Component {
 componentWillMount(){
       if(localStorage.getItem('user'))
       this.setState({token:localStorage.getItem('user')});
@@ -17,7 +17,7 @@ constructor(props){
   render(){
     let deliver;
     if(this.state.token)
-    deliver=<Rnews/>
+    deliver=<Rinent/>
     else deliver=<Lf/>
     return(
       <div>
@@ -27,10 +27,10 @@ constructor(props){
   }
 }
 
-class Rnews extends Component {
+class Rinent extends Component {
   componentWillMount(){
     axios({
-      url:'https://newsapi.org/v2/top-headlines?country=in&apiKey=8efb4d00ecb5445d9c27a0addb9bd51e'
+      url:'https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=8efb4d00ecb5445d9c27a0addb9bd51e'
     })
     .then(res=>this.setState({inews:res.data.articles}))
     .catch(err=>console.log(err));
@@ -49,7 +49,7 @@ class Rnews extends Component {
             <div className="row">
               <div className="col-12">
                 <h1 className="display-4 text-center lead my-4 animated swing delay-1s">
-                Top 20 headlines in India !
+                Entertainment Headlines !
               </h1>
               <div className="d-flex justify-content-center mt-5">
               <Link to="/intech" className="btn btn-outline-success">Technology</Link>
