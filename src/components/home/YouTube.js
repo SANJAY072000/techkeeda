@@ -1,8 +1,7 @@
 import React,{Component} from 'react';
 import axios from 'axios';
 
-const API = '';
-const channelID = '';
+
 
 export default class YouTube extends Component {
   componentWillMount(){
