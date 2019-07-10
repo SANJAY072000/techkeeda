@@ -29,7 +29,7 @@ export default class Grad extends Component {
 class RGrad extends Component {
   componentDidMount(){
     axios({
-      url:'https://raw.githubusercontent.com/ghosh/uiGradients/master/gradients.json'
+      url:''
     })
     .then(res=>this.setState({colors:res.data}))
     .catch(err=>console.log(err));
