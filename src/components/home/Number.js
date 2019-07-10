@@ -6,10 +6,8 @@ const d=new Date();
 export default class Number extends Component {
   componentWillMount(){
     axios({
-      url:`https://numbersapi.p.rapidapi.com/${d.getMonth()+1}/${d.getDate()}/date?fragment=true&json=true`,
+      url:``,
       headers:{
-        'X-RapidAPI-Host':'numbersapi.p.rapidapi.com',
-        'X-RapidAPI-Key':'9e984b3cf7mshc35d121a0419715p1bf4d1jsn50d7d624ce5f'
       }
     })
     .then(res=>this.setState({text:res.data.text,year:res.data.year}))
